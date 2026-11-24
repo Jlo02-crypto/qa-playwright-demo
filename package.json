@@ -1,0 +1,19 @@
+{
+  "name": "qa-playwright-demo",
+  "version": "1.0.0",
+  "description": "E2E test automation reference: Playwright + TypeScript + GitHub Actions against a public e-commerce practice site",
+  "private": true,
+  "scripts": {
+    "test": "playwright test",
+    "test:smoke": "playwright test --grep @smoke",
+    "test:regression": "playwright test --grep @regression",
+    "test:chromium": "playwright test --project=chromium",
+    "report": "playwright show-report",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.48.0",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.4.0"
+  }
+}
